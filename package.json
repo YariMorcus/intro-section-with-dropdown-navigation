@@ -1,0 +1,26 @@
+{
+  "name": "ntro-section-with-dropdown-navigation",
+  "description": "Frontend Mentor challenge made by Yari Morcus",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel serve src/*.html --no-cache",
+    "build": "parcel build src/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YariMorcus/intro-section-with-dropdown-navigation"
+  },
+  "author": "Yari Morcus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YariMorcus/intro-section-with-dropdown-navigation/issues"
+  },
+  "homepage": "https://github.com/YariMorcus/intro-section-with-dropdown-navigation#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "cssnano": "^6.0.1",
+    "parcel": "^2.9.3",
+    "postcss": "^8.4.31",
+    "sass": "^1.68.0"
+  }
+}

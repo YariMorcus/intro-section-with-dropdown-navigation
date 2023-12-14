@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Epilogue';
+    src: url('Epilogue-Medium.woff2') format('woff2'),
+        url('Epilogue-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('Epilogue-Bold.woff2') format('woff2'),
+        url('Epilogue-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
