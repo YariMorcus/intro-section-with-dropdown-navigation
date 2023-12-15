@@ -34,9 +34,29 @@
 </head>
 <body>
 
+    <nav class="nav" role="navigation">
+        <a href="/" class="logo">
+            <object data="img/logo.svg" type="image/svg+xml" class="logo__object">
+                <img src="img/logo.png" alt="the logo of snap" class="logo__img">
+            </object> <!-- .logo__object -->
+        </a> <!-- .logo -->
+
+        <button id="js-nav__toggle" class="nav__toggle" aria-expanded="false" aria-controls="js-nav__menu">Menu</button>
+
+        <ul id="js-nav__menu" class="nav__menu">
+            <li class="nav__menu-item"><a href="#" class="nav__menu-link">Features</a></li>
+            <li class="nav__menu-item"><a href="#" class="nav__menu-link">Company</a></li>
+            <li class="nav__menu-item"><a href="#" class="nav__menu-link">Careers</a></li>
+            <li class="nav__menu-item"><a href="#" class="nav__menu-link">About</a></li>
+            <div class="nav__menu-separator"></div>
+            <li class="nav__menu-item"><a href="#" class="nav__menu-link">Login</a></li>
+            <li class="nav__menu-item"><a href="#" class="nav__menu-link">Register</a></li>
+        </ul> <!-- .nav__menu -->
+    </nav> <!-- .nav -->
+
     <footer class="footer">
         Challenge by <a class="footer__link" rel="noopener noreferrer" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded&nbsp;by&nbsp;<a class="footer__link" rel="noopener noreferrer" href="https://www.linkedin.com/in/yarimorcus" target="_blank">Yari&nbsp;Morcus</a>.
-    </footer> <!-- .footer -->
+    </footer> .footer
 </body>
 </html>
