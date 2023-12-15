@@ -15,6 +15,8 @@ Difficulty: `Junior`
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Links](#links)
+  - [Project information](#project-information)
+    - [User stories](#user-stories)
   - [Author](#author)
 
 ## Overview
@@ -33,8 +35,13 @@ The users should be able to:
 - Solution URL: [Open GitHub repository](https://github.com/YariMorcus/intro-section-with-dropdown-navigation)
 
 [//]: # 'Insert following when online: - Live Site URL: [open Netlify / GitHub page][fill in link]'
-[//]: # '## Project information'
-[//]: # '### User stories and features'
+
+## Project information
+
+### User stories
+
+**US.1**: as a user, I want to be able to view the menu items in the drop-down menu as soon as I hover over a menu item. This is so I can navigate to the necessary page without being overwhelmed by the amount of menu items.
+
 [//]: # '1. As a user I want to generate a new piece of advice so I might be able to learn something from it'
 [//]: # '**Feature**: A button that generates a new piece of advice based on an API call'
 [//]: # 'Optional: ### Flowchart'
