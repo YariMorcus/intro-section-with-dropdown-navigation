@@ -1,6 +1,21 @@
+@use '../abstracts/variables' as v;
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Nav
+    1.1 General
+    1.2 JS available (progressive enhancement)
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[1.1 General]
+-------------------------------------------------------------------*/
+
 .nav {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   padding: 2rem;
 
   &__toggle {
@@ -8,6 +23,7 @@
     height: 1.8rem;
     background: url(../img/icon-menu.svg) no-repeat;
     border: none;
+    display: none;
 
     &-text {
       position: absolute;
@@ -21,6 +37,48 @@
   }
 
   &__menu {
-    display: none;
+    // display: none;
+    list-style: none;
+    padding-left: 0;
+    background-color: #e0ca2e;
+  }
+
+  &__menu-item {
+    padding: 8px 2rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__menu-separator {
+    margin-bottom: 10px;
+    height: 1px;
+    background: v.$almost-black;
+  }
+
+  &__menu-link {
+    // color: #696969;
+    color: v.$menu-link-non-js-color;
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
+}
+
+/*------------------------------------------------------------------
+[1.2 JS available] (progressive enhancement)
+-------------------------------------------------------------------*/
+
+.js {
+  .nav {
+    flex-direction: initial;
+
+    &__toggle {
+      display: block;
+    }
+
+    &__menu {
+      display: none;
+    }
   }
 }
