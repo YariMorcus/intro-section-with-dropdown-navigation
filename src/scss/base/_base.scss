@@ -4,6 +4,9 @@
 // Import mixins
 @use '../abstracts/mixins' as m;
 
+// Import typography
+@use 'typography' as t;
+
 /* Set core root defaults */
 html {
   font-size: 10px;
@@ -19,7 +22,8 @@ body {
   display: flex;
   flex-direction: column;
   text-rendering: optimizeSpeed;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Epilogue', sans-serif;
+  font-size: t.$font-size-paragraph;
   line-height: 1.5;
 }
 
