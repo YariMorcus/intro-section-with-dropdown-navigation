@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+
+  &__toggle {
+    width: 3.2rem;
+    height: 1.8rem;
+    background: url(../img/icon-menu.svg) no-repeat;
+    border: none;
+
+    &-text {
+      position: absolute;
+      clip: rect(1px, 1px 1px, 1px);
+      padding: 0;
+      border: 0;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+  }
+
+  &__menu {
+    display: none;
+  }
+}
