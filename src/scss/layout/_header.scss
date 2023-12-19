@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as v;
+
+.header {
+  margin-bottom: 4rem;
+
+  &__illustration {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  &__inner {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  &__heading {
+    margin-bottom: 1rem;
+  }
+
+  &__introduction {
+    margin-bottom: 2.5rem;
+    color: v.$medium-gray;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 5rem;
+    padding: 1.1rem;
+    width: 14rem;
+    text-decoration: none;
+    color: v.$almost-white;
+    background-color: v.$almost-black;
+    border-radius: 15px;
+  }
+
+  &__clients {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__client-logo {
+    width: 6.5rem;
+  }
+}
