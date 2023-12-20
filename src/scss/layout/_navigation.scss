@@ -6,6 +6,8 @@
 1. Nav
     1.1 General
     1.2 JS available (progressive enhancement)
+2. Nav dropdown
+    2.1 Expanded level 1
 -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -37,14 +39,16 @@
     }
   }
 
-  &__menu {
+  &__menu,
+  &__menu-level-1 {
     // display: none;
     list-style: none;
     padding-left: 0;
     background-color: #e0ca2e;
   }
 
-  &__menu-item {
+  &__menu-item,
+  &__menu-item-level-1 {
     padding: 8px 2rem;
 
     &:not(:last-child) {
@@ -165,5 +169,15 @@
         }
       }
     }
+  }
+}
+
+/*------------------------------------------------------------------
+[2.1 Expanded level 1]
+-------------------------------------------------------------------*/
+
+.nav {
+  &__menu-item-level-1:first-child {
+    margin-top: 1rem;
   }
 }
