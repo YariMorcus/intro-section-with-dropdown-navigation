@@ -32,7 +32,7 @@
     <!-- <meta name="twitter:image:alt" content="A screenshot of the page"> -->
 
 </head>
-<body>
+<body class="js">
 
     <nav class="nav" role="navigation">
         <a href="/" class="logo">
@@ -43,14 +43,14 @@
 
         <button id="js-nav__toggle" class="nav__toggle" aria-expanded="false" aria-controls="js-nav__menu"><span class="nav__toggle-text">Menu</span></button>
 
-        <ul id="js-nav__menu" class="nav__menu">
-            <li class="nav__menu-item"><a href="#" class="nav__menu-link">Features</a></li>
-            <li class="nav__menu-item"><a href="#" class="nav__menu-link">Company</a></li>
+        <ul id="js-nav__menu" class="nav__menu is-active">
+            <li class="nav__menu-item is-dropdown"><a href="#" class="nav__menu-link">Features</a></li>
+            <li class="nav__menu-item is-dropdown"><a href="#" class="nav__menu-link">Company</a></li>
             <li class="nav__menu-item"><a href="#" class="nav__menu-link">Careers</a></li>
             <li class="nav__menu-item"><a href="#" class="nav__menu-link">About</a></li>
             <li class="nav__menu-separator"></li>
-            <li class="nav__menu-item"><a href="#" class="nav__menu-link">Login</a></li>
-            <li class="nav__menu-item"><a href="#" class="nav__menu-link">Register</a></li>
+            <li class="nav__menu-item nav__menu-item--login"><a href="#" class="nav__menu-link">Login</a></li>
+            <li class="nav__menu-item nav__menu-item--register"><a href="#" class="nav__menu-link">Register</a></li>
         </ul> <!-- .nav__menu -->
     </nav> <!-- .nav -->
 
