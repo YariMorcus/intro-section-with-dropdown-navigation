@@ -131,12 +131,17 @@
 
           &-item--login,
           &-item--register {
+            margin: 0 auto;
+            width: 20rem;
+            padding: 0;
             text-align: center;
           }
 
+          &-item--login {
+            margin-bottom: 1rem;
+          }
+
           &-item--register {
-            margin: 0 auto;
-            width: 20rem;
             border: 2px solid v.$medium-gray;
             border-radius: 1rem;
           }
@@ -148,6 +153,13 @@
 
           &-link {
             border-bottom: none;
+          }
+
+          &-link--login,
+          &-link--register {
+            display: inline-block;
+            padding: 1rem 3rem;
+            width: 100%;
           }
         }
       }
