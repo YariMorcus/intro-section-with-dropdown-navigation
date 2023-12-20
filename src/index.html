@@ -32,7 +32,7 @@
     <!-- <meta name="twitter:image:alt" content="A screenshot of the page"> -->
 
 </head>
-<body class="js">
+<body class="jfs">
 
     <nav class="nav" role="navigation">
         <a href="/" class="logo">
@@ -44,8 +44,35 @@
         <button id="js-nav__toggle" class="nav__toggle" aria-expanded="false" aria-controls="js-nav__menu"><span class="nav__toggle-text">Menu</span></button>
 
         <ul id="js-nav__menu" class="nav__menu is-active">
-            <li class="nav__menu-item is-dropdown"><a href="#" class="nav__menu-link">Features</a></li>
-            <li class="nav__menu-item is-dropdown"><a href="#" class="nav__menu-link">Company</a></li>
+            <li class="nav__menu-item is-dropdown"><a href="#" class="nav__menu-link">Features</a>
+                <ul class="nav__menu-level-1">
+                    <li class="nav__menu-item-level-1 nav__menu-item-level-1--todo-list">
+                        <a href="#" class="nav__menu-link nav__menu-link-level-1">Todo List</a>
+                    </li> <!-- .nav__menu-item-level-1 -->
+                    <li class="nav__menu-item-level-1 nav__menu-item-level-1--calendar">
+                        <a href="#" class="nav__menu-link nav__menu-link-level-1">Calendar</a>
+                    </li> <!-- .nav__menu-item-level-1 -->
+                    <li class="nav__menu-item-level-1 nav__menu-item-level-1--reminders">
+                        <a href="#" class="nav__menu-link nav__menu-link-level-1">Reminders</a>
+                    </li> <!-- .nav__menu-item-level-1 -->
+                    <li class="nav__menu-item-level-1 nav__menu-item-level-1--planning">
+                        <a href="#" class="nav__menu-link nav__menu-link-level-1">Planning</a>
+                    </li> <!-- .nav__menu-item-level-1 -->
+                </ul> <!-- .nav__menu-level-1-->
+            </li>
+            <li class="nav__menu-item is-dropdown"><a href="#" class="nav__menu-link">Company</a>
+                <ul class="nav__menu-level-1">
+                    <li class="nav__menu-item-level-1">
+                        <a href="#" class="nav__menu-link nav__menu-link-level-1">History</a>
+                    </li> <!-- .nav__menu-item-level-1 -->
+                    <li class="nav__menu-item-level-1">
+                        <a href="#" class="nav__menu-link nav__menu-link-level-1">Our Team</a>
+                    </li> <!-- .nav__menu-item-level-1 -->
+                    <li class="nav__menu-item-level-1">
+                        <a href="#" class="nav__menu-link nav__menu-link-level-1">Blog</a>
+                    </li> <!-- .nav__menu-item-level-1 -->
+                </ul> <!-- .nav__menu-level-1-->
+            </li>
             <li class="nav__menu-item"><a href="#" class="nav__menu-link">Careers</a></li>
             <li class="nav__menu-item"><a href="#" class="nav__menu-link">About</a></li>
             <li class="nav__menu-separator"></li>
