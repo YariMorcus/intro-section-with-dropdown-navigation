@@ -30,7 +30,9 @@
 
   &__content,
   &__clients {
+    margin: 0 auto;
     padding: 2rem;
+    max-width: 37.5rem;
   }
 
   &__heading {
