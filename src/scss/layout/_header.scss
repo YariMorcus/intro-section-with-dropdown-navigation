@@ -33,6 +33,10 @@
     margin: 0 auto;
     padding: 2rem;
     max-width: 37.5rem;
+
+    @include m.breakpoint-lg() {
+      max-width: initial;
+    }
   }
 
   &__heading {
@@ -74,7 +78,7 @@
 
     @include m.breakpoint-lg() {
       grid-area: clients;
-      // flex: 1;
+      margin: initial;
     }
   }
 
