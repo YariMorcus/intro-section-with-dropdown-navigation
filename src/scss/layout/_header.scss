@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
 
 .header {
   margin-bottom: 4rem;
@@ -6,40 +7,86 @@
   &__illustration {
     display: block;
     margin-bottom: 2rem;
+
+    @include m.breakpoint-lg() {
+      grid-area: illustration;
+      order: 1;
+    }
   }
 
-  &__inner {
-    padding: 2rem;
+  &__content {
     text-align: center;
+
+    @include m.breakpoint-lg() {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      grid-template-rows: repeat(2, auto) 1fr auto;
+      text-align: left;
+      grid-area: content;
+    }
+  }
+
+  &__content,
+  &__clients {
+    padding: 2rem;
   }
 
   &__heading {
     margin-bottom: 1rem;
+
+    @include m.breakpoint-lg() {
+      line-height: 1;
+      font-size: 7rem;
+    }
   }
 
   &__introduction {
     margin-bottom: 2.5rem;
     color: v.$medium-gray;
+
+    @include m.breakpoint-lg() {
+      margin-bottom: 5rem;
+    }
   }
 
   &__link {
     display: inline-block;
-    margin-bottom: 5rem;
-    padding: 1.1rem;
-    width: 14rem;
+    padding: 1rem 2.5rem;
     text-decoration: none;
     color: v.$almost-white;
     background-color: v.$almost-black;
     border-radius: 15px;
+
+    @include m.breakpoint-lg {
+      width: max-content;
+      height: max-content;
+    }
   }
 
   &__clients {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include m.breakpoint-lg() {
+      grid-area: clients;
+      // flex: 1;
+    }
   }
 
   &__client-logo {
     width: 6.5rem;
+
+    @include m.breakpoint-lg() {
+      width: initial;
+    }
+  }
+
+  @include m.breakpoint-lg() {
+    display: grid;
+    grid-template: 'content illustration' 1fr 'clients illustration' / 1fr 1fr;
+    column-gap: 10rem;
   }
 }
