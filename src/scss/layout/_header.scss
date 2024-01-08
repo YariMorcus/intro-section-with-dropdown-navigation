@@ -43,6 +43,7 @@
     margin-bottom: 1rem;
 
     @include m.breakpoint-lg() {
+      margin-bottom: 6rem;
       line-height: 1;
       font-size: 7rem;
     }
@@ -94,5 +95,7 @@
     display: grid;
     grid-template: 'content illustration' 1fr 'clients illustration' / 1fr 1fr;
     column-gap: 10rem;
+    margin: 0 auto 4rem;
+    max-width: 110rem;
   }
 }
