@@ -86,6 +86,12 @@
     }
   }
 
+  &__menu-item-level-1 {
+    @include m.breakpoint-lg() {
+      text-align: left;
+    }
+  }
+
   &__menu-separator {
     margin-bottom: 10px;
     height: 1px;
@@ -245,7 +251,7 @@
 .nav {
   &__menu-level-1 {
     @include m.breakpoint-lg() {
-      display: none;
+      // display: none;
       background-color: v.$almost-white;
       position: absolute;
       right: 0;
@@ -296,6 +302,7 @@
     }
 
     @include m.breakpoint-lg() {
+      margin: 0;
       background-color: transparent;
     }
   }
