@@ -136,9 +136,11 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    margin: 0 auto;
-    padding: 4rem 0;
+  }
+
+  @include m.breakpoint-xl {
     width: 135rem;
+    margin: 0 auto;
   }
 }
 
@@ -154,10 +156,18 @@
 
     &__toggle {
       display: block;
+
+      @include m.breakpoint-lg() {
+        display: none;
+      }
     }
 
     &__menu {
       display: none;
+
+      @include m.breakpoint-lg() {
+        display: flex;
+      }
     }
   }
 }
@@ -171,8 +181,8 @@
     &__toggle {
       height: 2.6rem;
       width: 2.6rem;
-      background: url(../img/icon-close-menu.svg) no-repeat;
-      // background: url(../img/icon-menu.svg) no-repeat;
+      // background: url(../img/icon-close-menu.svg) no-repeat;
+      background: url(../img/icon-menu.svg) no-repeat;
       z-index: 1;
     }
 
