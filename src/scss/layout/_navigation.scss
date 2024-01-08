@@ -148,6 +148,8 @@
 
 .js {
   .nav {
+    display: flex;
+    justify-content: space-between;
     flex-direction: initial;
 
     &__toggle {
@@ -170,6 +172,7 @@
       height: 2.6rem;
       width: 2.6rem;
       background: url(../img/icon-close-menu.svg) no-repeat;
+      // background: url(../img/icon-menu.svg) no-repeat;
       z-index: 1;
     }
 
