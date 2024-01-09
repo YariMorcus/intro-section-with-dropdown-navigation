@@ -7,7 +7,7 @@
 1. Nav
     1.1 General
     1.2 JS available (progressive enhancement)
-    1.3 Menu expanded (JS, progressive enhancement)
+    1.3 Mobile menu expanded (JS, progressive enhancement)
 2. Nav dropdown
     2.1 Expanded level 1
     2.2 Expanded level 1 (JS, progressive enhancement)
@@ -189,7 +189,7 @@
 }
 
 /*------------------------------------------------------------------
-[1.3 Menu expanded (JS, progressive enhancement)
+[1.3 Mobile menu expanded (JS, progressive enhancement)
 -------------------------------------------------------------------*/
 
 .js {
@@ -218,6 +218,24 @@
   }
 }
 
+.is-active {
+  .nav__menu {
+    &-separator {
+      background: transparent;
+    }
+
+    &-item--login,
+    &-item--register {
+      text-align: center;
+    }
+
+    &-item--register {
+      margin: 0 20px;
+      border: 2px solid v.$medium-gray;
+      border-radius: 1.5rem;
+    }
+  }
+}
 /*------------------------------------------------------------------
 [2.1 Expanded level 1]
 -------------------------------------------------------------------*/
