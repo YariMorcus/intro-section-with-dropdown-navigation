@@ -1,0 +1,6 @@
+@use '../abstracts/mixins' as m;
+.logo {
+  @include m.breakpoint-lg {
+    padding-top: 0.6rem;
+  }
+}

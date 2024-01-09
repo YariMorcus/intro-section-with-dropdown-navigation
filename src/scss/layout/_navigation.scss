@@ -43,20 +43,40 @@
   &__menu {
     margin: 0;
 
+    &-item--login,
     &-item--register {
+      @include m.breakpoint-lg() {
+        text-align: center;
+      }
+    }
+
+    &-item--login {
+      @include m.breakpoint-lg() {
+        text-align: right;
+        padding-right: 1rem;
+      }
+    }
+
+    &-link {
+      border: 2px solid transparent;
+    }
+
+    &-link--register {
+      @include m.breakpoint-lg() {
+        border: 2px solid v.$medium-gray;
+        border-radius: 1.5rem;
+      }
     }
 
     @include m.breakpoint-lg() {
       display: flex;
       flex: 1;
-      // margin-top: -0.8rem;
       margin-left: 4rem;
     }
   }
 
   &__menu,
   &__menu-level-1 {
-    // display: none;
     list-style: none;
     padding-left: 0;
     background-color: #e0ca2e;
@@ -67,16 +87,11 @@
   }
 
   &__menu-item {
-    @include m.breakpoint-lg() {
-      text-align: center;
-    }
+    flex: 1;
   }
 
   &__menu-item,
   &__menu-item-level-1 {
-    position: relative;
-    flex: 1;
-
     &:not(:last-child) {
       margin-bottom: 1rem;
 
@@ -108,45 +123,17 @@
     padding: 0.6rem 2rem;
     color: v.$menu-link-non-js-color;
     text-decoration: none;
-
-    &--register {
-      @include m.breakpoint-lg() {
-        height: max-content;
-        border: 2px solid v.$medium-gray;
-        border-radius: 1.5rem;
-      }
-    }
-  }
-
-  .is-dropdown {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      display: block;
-      width: 1rem;
-      height: 0.6rem;
-      background: url(../img/icon-arrow-down.svg) no-repeat;
-      transform: translateY(-50%);
-      content: '';
-    }
-
-    &--expanded::after {
-      background: url(../img/icon-arrow-up.svg) no-repeat;
-    }
   }
 
   @include m.breakpoint-lg() {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
   }
 
   @include m.breakpoint-xl {
     width: 135rem;
     margin: 0 auto;
+    align-items: start;
   }
 }
 
@@ -173,6 +160,29 @@
 
       @include m.breakpoint-lg() {
         display: flex;
+      }
+
+      &-level-1 {
+        display: none;
+      }
+    }
+
+    &__menu-link {
+      &.is-dropdown {
+        position: relative;
+      }
+
+      &--features::after,
+      &--company::after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        display: block;
+        width: 1rem;
+        height: 0.6rem;
+        transform: translateY(-50%);
+        background: url(../img/icon-arrow-down.svg) no-repeat;
+        content: '';
       }
     }
   }
@@ -203,42 +213,6 @@
         margin-top: 7.5rem;
         width: 25rem;
         height: 100vh;
-
-        .nav__menu {
-          &-item--login,
-          &-item--register {
-            margin: 0 auto;
-            width: 20rem;
-            padding: 0;
-            text-align: center;
-          }
-
-          &-item--login {
-            margin-bottom: 1rem;
-          }
-
-          &-separator {
-            margin-bottom: 2rem;
-            height: 0;
-          }
-
-          &-link {
-            text-decoration: none;
-            border-bottom: none;
-          }
-
-          &-link--login,
-          &-link--register {
-            display: inline-block;
-            padding: 1rem 3rem;
-            width: 100%;
-          }
-
-          &-link--register {
-            border: 2px solid v.$medium-gray;
-            border-radius: 1.5rem;
-          }
-        }
       }
     }
   }
@@ -249,17 +223,6 @@
 -------------------------------------------------------------------*/
 
 .nav {
-  &__menu-level-1 {
-    @include m.breakpoint-lg() {
-      // display: none;
-      background-color: v.$almost-white;
-      position: absolute;
-      right: 0;
-      border: 1px solid;
-      padding: 1rem;
-    }
-  }
-
   &__menu-item-level-1 {
     margin: 1rem 3.5rem;
     background-color: v.$almost-white;
@@ -301,6 +264,12 @@
       content: url(../img/icon-planning.svg);
     }
 
+    &--history,
+    &--team,
+    &--blog {
+      padding-left: 2rem;
+    }
+
     @include m.breakpoint-lg() {
       margin: 0;
       background-color: transparent;
@@ -312,14 +281,15 @@
 [2.2 Expanded level 1 (JS, progressive enhancement)
 -------------------------------------------------------------------*/
 
-.js {
-  .nav {
-    &__menu-level-1 {
-      background-color: initial;
-    }
+// .js {
+//   .nav {
+//     &__menu-level-1 {
+//       // background-color: initial;
+//       // display: none;
+//     }
 
-    &__menu-item-level-1 {
-      background-color: v.$white;
-    }
-  }
-}
+//     &__menu-item-level-1 {
+//       background-color: v.$white;
+//     }
+//   }
+// }
