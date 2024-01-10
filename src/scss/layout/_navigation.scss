@@ -65,6 +65,10 @@
         border: 2px solid v.$medium-gray;
         border-radius: 1.5rem;
       }
+
+      &:hover {
+        border: 2px solid v.$almost-black;
+      }
     }
 
     @include m.breakpoint-lg() {
@@ -129,6 +133,10 @@
     padding: 0.6rem 2rem;
     color: v.$menu-link-non-js-color;
     text-decoration: none;
+
+    &:hover {
+      color: v.$almost-black;
+    }
   }
 
   @include m.breakpoint-lg() {
@@ -185,6 +193,8 @@
     }
 
     &__menu-link {
+      color: v.$medium-gray;
+
       &.is-dropdown {
         position: relative;
       }
@@ -200,6 +210,10 @@
         transform: translateY(-50%);
         background: url(../img/icon-arrow-down.svg) no-repeat;
         content: '';
+      }
+
+      &:hover {
+        color: v.$almost-black;
       }
     }
   }
@@ -262,6 +276,7 @@
   &__menu-link {
     &-level-1 {
       padding: 0.4rem 2rem;
+      width: 100%;
     }
     &--features.is-dropdown--expanded + .nav__menu-level-1 {
       @include m.breakpoint-lg() {
@@ -332,7 +347,7 @@
     }
 
     @include m.breakpoint-lg() {
-      margin: 0;
+      margin: 0.4rem 0;
       background-color: transparent;
     }
   }

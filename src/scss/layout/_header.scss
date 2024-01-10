@@ -64,7 +64,14 @@
     text-decoration: none;
     color: v.$almost-white;
     background-color: v.$almost-black;
+    border: 2px solid transparent;
     border-radius: 15px;
+
+    &:hover {
+      color: v.$almost-black;
+      background-color: v.$white;
+      border: 2px solid v.$almost-black;
+    }
 
     @include m.breakpoint-lg {
       width: max-content;
