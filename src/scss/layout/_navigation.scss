@@ -134,6 +134,10 @@
     color: v.$menu-link-non-js-color;
     text-decoration: none;
 
+    &--about {
+      margin-left: -2rem;
+    }
+
     &:hover {
       color: v.$almost-black;
     }
