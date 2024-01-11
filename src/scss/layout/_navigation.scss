@@ -202,10 +202,6 @@
     &__menu-link {
       color: v.$medium-gray;
 
-      &.is-dropdown {
-        position: relative;
-      }
-
       &--features::after,
       &--company::after {
         position: absolute;
