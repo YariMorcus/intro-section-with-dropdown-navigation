@@ -135,7 +135,9 @@
     text-decoration: none;
 
     &--about {
-      margin-left: -2rem;
+      @include m.breakpoint-lg() {
+        margin-left: -2rem;
+      }
     }
 
     &:hover {
@@ -233,9 +235,12 @@
     &__toggle {
       height: 2.6rem;
       width: 2.6rem;
-      // background: url(../img/icon-close-menu.svg) no-repeat;
       background: url(../img/icon-menu.svg) no-repeat;
       z-index: 1;
+
+      &.menu-expanded {
+        background: url(../img/icon-close-menu.svg) no-repeat;
+      }
     }
 
     &__menu {
