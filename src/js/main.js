@@ -51,6 +51,9 @@ class Navigation {
     // Show mobile menu
     this.#navMenu.classList.toggle('is-active');
     this.#toggleButton.classList.toggle('menu-expanded');
+
+    // Indicate to assistive technologies if menu is expanded or not
+    this.#toggleAriaExpanded(this.#toggleButton);
   }
 
   /**
@@ -59,6 +62,18 @@ class Navigation {
    */
   #dropdownController(curDropdownLink) {
     curDropdownLink.classList.toggle('is-dropdown--expanded');
+
+    // Indicate to assistive technologies if menu is expanded or not
+    this.#toggleAriaExpanded(curDropdownLink);
+  }
+
+  /**
+   * @returns {undefined}
+   */
+  #toggleAriaExpanded(el) {
+    el.getAttribute('aria-expanded') === 'true'
+      ? el.setAttribute('aria-expanded', false)
+      : el.setAttribute('aria-expanded', true);
   }
 }
 
