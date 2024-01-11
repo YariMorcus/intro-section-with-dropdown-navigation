@@ -70,20 +70,20 @@ img {
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 1;
   padding: 0 1.28rem 1.28rem;
+  white-space: pre-wrap;
   font-family: 'Epilogue', sans-serif;
   font-size: 1.2rem;
-  text-align: center;
 
-  // &__link {
-  //   &:hover {
-  // color: v.$almost-black;
-  //   }
-
-  //   &:focus-visible {
-  //     border-radius: 1px;
-  //   }
-  // }
+  &__link {
+    &:hover {
+      color: v.$almost-black;
+    }
+  }
 }
 
 // .noscript {
