@@ -30,7 +30,7 @@
 
     &-text {
       position: absolute;
-      clip-path: rect(1px, 1px 1px, 1px);
+      clip-path: inset(1px 1px 1px 1px);
       padding: 0;
       border: 0;
       width: 1px;
