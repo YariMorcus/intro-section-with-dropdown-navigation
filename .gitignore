@@ -1,6 +1,7 @@
 # CUSTOM: Ignore folders
 temp
 src/starter-files
+settings.json
 
 # Logs
 logs
