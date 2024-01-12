@@ -2,7 +2,7 @@ class Navigation {
   #body = document.body;
   #toggleButton = document.querySelector('#js-nav__toggle');
   #navMenu = document.querySelector('#js-nav__menu');
-  #navMenuLinks = document.querySelectorAll('.nav__menu-link');
+  #navMenuLinks = document.querySelectorAll('.js-nav__menu-link');
 
   constructor() {
     /*
