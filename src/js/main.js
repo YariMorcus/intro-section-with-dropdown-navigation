@@ -49,6 +49,7 @@ class Navigation {
    */
   #navController() {
     // Show mobile menu
+    this.#body.classList.toggle('overlay');
     this.#navMenu.classList.toggle('is-active');
     this.#toggleButton.classList.toggle('menu-expanded');
 
