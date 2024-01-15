@@ -373,9 +373,18 @@
 }
 
 .is-dropdown {
+  &--expanded + .nav__menu-level-1 {
+    display: block;
+  }
+
+  &:hover + .nav__menu-level-1 {
+    @include m.breakpoint-lg() {
+      display: block;
+    }
+  }
+
   &--expanded + .nav__menu-level-1,
   &:hover + .nav__menu-level-1 {
-    display: block;
     background-color: v.$white;
 
     & .nav__menu-item-level-1 {
@@ -387,7 +396,10 @@
         padding-left: 0;
       }
     }
+  }
 
+  &--expanded + .nav__menu-level-1,
+  &:hover + .nav__menu-level-1 {
     @include m.breakpoint-lg() {
       position: absolute;
       padding: 1.5rem;
@@ -396,11 +408,17 @@
     }
   }
 
-  &--expanded,
-  &:hover {
-    &.nav__menu-link {
-      &--features::after,
-      &--company::after {
+  &--expanded.nav__menu-link {
+    &--features::after,
+    &--company::after {
+      background: url(../img/icon-arrow-up.svg) no-repeat;
+    }
+  }
+
+  &:hover.nav__menu-link {
+    &--features::after,
+    &--company::after {
+      @include m.breakpoint-lg() {
         background: url(../img/icon-arrow-up.svg) no-repeat;
       }
     }
