@@ -1,8 +1,11 @@
+@use 'sass:color';
+
 /*------------------------------------------------------------------
 [Table of contents]
     1. Colors
         1.1 Neutral
-        1.2 Black and white
+        1.2 Navigation
+        1.3 Black and white
 -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -16,14 +19,15 @@ $almost-black:              hsl(0, 0%, 8%);
 
 /*------------------------------------------------------------------
 1. Colors
-    1.2. Menu link
+    1.2. Navigation
 */
 
 $menu-link-non-js-color:    hsl(0, 0%, 22%);
+$overlay:                   color.scale($almost-black, $lightness: 40%);
 
 /*------------------------------------------------------------------
 1. Colors
-    1.2 Black and white
+    1.3 Black and white
 */
 
 $black:                     hsl(0, 0%, 0%);
