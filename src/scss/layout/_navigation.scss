@@ -85,7 +85,7 @@
     background-color: #e0ca2e;
 
     @include m.breakpoint-lg() {
-      background-color: v.$white;
+      background-color: v.$almost-white;
     }
   }
 
@@ -250,7 +250,7 @@
     }
 
     &__menu {
-      background-color: v.$white;
+      background-color: v.$almost-white;
 
       &.is-active {
         position: absolute;
@@ -385,10 +385,10 @@
 
   &--expanded + .nav__menu-level-1,
   &:hover + .nav__menu-level-1 {
-    background-color: v.$white;
+    background-color: v.$almost-white;
 
     & .nav__menu-item-level-1 {
-      background-color: v.$white;
+      background-color: v.$almost-white;
 
       &--history,
       &--team,

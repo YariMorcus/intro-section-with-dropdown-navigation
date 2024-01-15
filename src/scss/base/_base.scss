@@ -25,6 +25,7 @@ body {
   font-family: 'Epilogue', sans-serif;
   font-size: t.$font-size-paragraph-mobile;
   line-height: 1.5;
+  background-color: v.$almost-white;
 
   @include m.breakpoint-lg() {
     font-size: t.$font-size-paragraph-desktop;
